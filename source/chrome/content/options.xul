@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://backupfox/locale/options.dtd">
+
+<!--
+	BackupFox
+	Copyright © 2011 Harry O.
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU General Public License for more details.
+-->
+
+<prefwindow id="backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66-options" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&prefwindow.title;">
+	
+	<prefpane id="mainPanel" label="&mainPanel.title;">
+		
+		<preferences>
+			
+			<!-- bookmarks -->
+			<preference id="bBookmarksEnabledPref" name="extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bBookmarksEnabled" type="bool" />
+			<preference id="bBookmarksFilePathPref" name="extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bBookmarksFilePath" type="string" />
+			<preference id="bBookmarksDelaySecPref" name="extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bBookmarksDelaySec" type="int" />
+			
+			<!-- history -->
+			<preference id="bHistoryEnabledPref" name="extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bHistoryEnabled" type="bool" />
+			<preference id="bHistoryFilePathPref" name="extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bHistoryFilePath" type="string" />
+			<preference id="bHistoryDelaySecPref" name="extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bHistoryDelaySec" type="int" />
+			<preference id="bHistoryItemLimitPref" name="extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bHistoryItemLimit" type="int" />
+			
+		</preferences>
+		
+		<spacer height="5" />
+		
+		<label width="300" height="70">&mainPanel.text;</label>
+		
+		<spacer height="5" />
+		
+		<!-- bookmarks -->
+		<groupbox id="bBookmarksGroupbox">
+			<caption label="&bBookmarksGroupbox.label;" />
+			<checkbox id="bBookmarksEnabledChkbox" preference="bBookmarksEnabledPref" label="&bBookmarksEnabledChkbox.label;" accesskey="&bBookmarksEnabledChkbox.accesskey;" />
+			<hbox>
+				<label accesskey="&bBookmarksFilePathTxbox.accesskey;" control="bBookmarksFilePathTxbox">&bBookmarksFilePathTxbox.label;</label>
+				<textbox id="bBookmarksFilePathTxbox" preference="bBookmarksFilePathPref" width="300" />
+			</hbox>
+			<hbox>
+				<label accesskey="&bBookmarksDelaySecNumr.accesskey;" control="bBookmarksDelaySecNumr">&bBookmarksDelaySecNumr.label;</label>
+				<textbox id="bBookmarksDelaySecNumr" type="number" min="1" max="100" preference="bBookmarksDelaySecPref" width="100" />
+			</hbox>
+		</groupbox>
+		
+		<spacer height="5" />
+		
+		<!-- history -->
+		<groupbox id="bHistoryGroupbox">
+			<caption label="&bHistoryGroupbox.label;" />
+			<checkbox id="bHistoryEnabledChkbox" preference="bHistoryEnabledPref" label="&bHistoryEnabledChkbox.label;" accesskey="&bHistoryEnabledChkbox.accesskey;" />
+			<hbox>
+				<label accesskey="&bHistoryFilePathTxbox.accesskey;" control="bHistoryFilePathTxbox">&bHistoryFilePathTxbox.label;</label>
+				<textbox id="bHistoryFilePathTxbox" preference="bHistoryFilePathPref" width="300" />
+			</hbox>
+			<hbox>
+				<label accesskey="&bHistoryDelaySecNumr.accesskey;" control="bHistoryDelaySecNumr">&bHistoryDelaySecNumr.label;</label>
+				<textbox id="bHistoryDelaySecNumr" type="number" min="1" max="100" preference="bHistoryDelaySecPref" width="100" />
+			</hbox>
+			<hbox>
+				<label accesskey="&bHistoryItemLimitNumr.accesskey;" control="bHistoryItemLimitNumr">&bHistoryItemLimitNumr.label;</label>
+				<textbox id="bHistoryItemLimitNumr" type="number" min="1" max="5000" preference="bHistoryItemLimitPref" width="100" />
+			</hbox>
+		</groupbox>
+		
+		<spacer height="5" />
+		
+	</prefpane>
+	
+</prefwindow>
+

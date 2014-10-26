@@ -1,0 +1,23 @@
+
+<!ENTITY prefwindow.title "BackupFox Options">
+<!ENTITY mainPanel.title "BackupFox Options">
+<!ENTITY mainPanel.text "Choose which items to back up and paths to files that will contain the backed-up data. All backup files are in JSON format, so it is recommended to use the .json file extension. Backup delay determines the wait period for creating an automatic backup after an item has changed.">
+
+<!ENTITY bBookmarksGroupbox.label "Bookmarks">
+<!ENTITY bBookmarksEnabledChkbox.label "Enable the backup of bookmarks.">
+<!ENTITY bBookmarksEnabledChkbox.accesskey "B">
+<!ENTITY bBookmarksFilePathTxbox.label "File Path:">
+<!ENTITY bBookmarksFilePathTxbox.accesskey "I">
+<!ENTITY bBookmarksDelaySecNumr.label "Backup Delay (in seconds):">
+<!ENTITY bBookmarksDelaySecNumr.accesskey "D">
+
+<!ENTITY bHistoryGroupbox.label "History">
+<!ENTITY bHistoryEnabledChkbox.label "Enable the backup of history.">
+<!ENTITY bHistoryEnabledChkbox.accesskey "H">
+<!ENTITY bHistoryFilePathTxbox.label "File Path:">
+<!ENTITY bHistoryFilePathTxbox.accesskey "L">
+<!ENTITY bHistoryDelaySecNumr.label "Backup Delay (in seconds):">
+<!ENTITY bHistoryDelaySecNumr.accesskey "E">
+<!ENTITY bHistoryItemLimitNumr.label "Item Limit:">
+<!ENTITY bHistoryItemLimitNumr.accesskey "M">
+

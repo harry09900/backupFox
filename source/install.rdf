@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	BackupFox
+	Copyright © 2011 Harry O.
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU General Public License for more details.
+-->
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	
+  <Description about="urn:mozilla:install-manifest">
+	
+    <em:id>backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66@mozillafirefoxextension</em:id>
+    <em:type>2</em:type>
+    <em:name>BackupFox</em:name>
+    <em:version>1.0.3</em:version>
+    <em:creator>Harry O.</em:creator>
+    <em:contributor></em:contributor>
+    <em:description>This Firefox extension regularly backs up your bookmarks and/or history when they are modified. Use this tool to maintain a copy of important browser settings in your personal files.</em:description>
+    <em:aboutURL>chrome://backupfox/content/about.xul</em:aboutURL>
+    <em:optionsURL>chrome://backupfox/content/options.xul</em:optionsURL>
+	<em:optionsType>1</em:optionsType> <!-- display in: (1) a dialog box, (2) inside the Add-on Manager, or (3) in a new tab. -->
+	<em:iconURL>chrome://backupfox/skin/iconA.png</em:iconURL> <!-- URL to a 48x48 pixel icon -->
+	<em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
+        <em:minVersion>5.0</em:minVersion>
+        <em:maxVersion>7.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+	<em:unpack>false</em:unpack>
+	<!-- supports all platforms -->
+	
+  </Description>
+  
+</RDF>
+

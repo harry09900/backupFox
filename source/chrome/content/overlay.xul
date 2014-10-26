@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://backupfox/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://backupfox/locale/overlay.dtd">
+
+<!--
+	BackupFox
+	Copyright © 2011 Harry O.
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU General Public License for more details.
+-->
+
+<overlay id="backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script src="UTF8Coder.js"/>
+	<script src="overlay.js"/>
+	
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66-strings" src="chrome://backupfox/locale/overlay.properties"/>
+	</stringbundleset>
+	
+	<!-- bookmarks menu add-on -->
+	<menupopup id="appmenu_bookmarksPopup">
+		<menuitem id="backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66-bookmarksMenuRunItemA" class="menuitem-iconic"
+			insertafter="appmenu_showAllBookmarks" label="&bookmarksMenuItem.label;" tooltiptext="&bookmarksMenuItem.tooltip;"
+			image="chrome://backupfox/skin/iconA.png" oncommand="window.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66_overlay.MenuBookmarksBackup();" />
+	</menupopup>
+	<menupopup id="bookmarksMenuPopup">
+		<menuitem id="backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66-bookmarksMenuRunItemB" class="menuitem-iconic"
+			insertafter="bookmarksShowAll" label="&bookmarksMenuItem.label;" tooltiptext="&bookmarksMenuItem.tooltip;"
+			image="chrome://backupfox/skin/iconA.png" oncommand="window.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66_overlay.MenuBookmarksBackup();" />
+	</menupopup>
+	
+	<!-- history menu add-on -->
+	<menupopup id="appmenu_historyMenupopup">
+		<menuitem id="backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66-historyMenuRunItemA" class="menuitem-iconic"
+			insertafter="appmenu_showAllHistory" label="&historyMenuItem.label;" tooltiptext="&historyMenuItem.tooltip;"
+			image="chrome://backupfox/skin/iconA.png" oncommand="window.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66_overlay.MenuHistoryBackup();" />
+	</menupopup>
+	<menupopup id="goPopup">
+		<menuitem id="backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66-historyMenuRunItemB" class="menuitem-iconic"
+			insertafter="menu_showAllHistory" label="&historyMenuItem.label;" tooltiptext="&historyMenuItem.tooltip;"
+			image="chrome://backupfox/skin/iconA.png" oncommand="window.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66_overlay.MenuHistoryBackup();" />
+	</menupopup>
+	
+</overlay>
+

@@ -1,0 +1,7 @@
+
+content   backupfox                 chrome/content/
+skin      backupfox   classic/1.0   chrome/skin/
+locale    backupfox   en-US         chrome/locale/en-US/
+
+overlay   chrome://browser/content/browser.xul   chrome://backupfox/content/overlay.xul
+

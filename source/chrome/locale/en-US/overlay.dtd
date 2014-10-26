@@ -1,0 +1,7 @@
+
+<!ENTITY bookmarksMenuItem.label "Back-up Bookmarks (BackupFox)">
+<!ENTITY bookmarksMenuItem.tooltip "Select this option to perform a bookmarks backup immediately.">
+
+<!ENTITY historyMenuItem.label "Back-up History (BackupFox)">
+<!ENTITY historyMenuItem.tooltip "Select this option to perform a history backup immediately.">
+

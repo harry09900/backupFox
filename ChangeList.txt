@@ -1,0 +1,17 @@
+
+1.0.3
+Now supports FireFox versions 5.0 to 7.*.
+Removed an unnecessary line from prefs.js file.
+
+1.0.2
+Now supports Firefox versions 5.0 to 6.*.
+
+1.0.1
+Added support for UTF-8 file path strings.
+Performs all enabled backups when Firefox exits.
+All source files are now encoded in UTF-8.
+
+1.0.0
+First release.
+Supports Firefox versions 5.0 to 5.*.
+
