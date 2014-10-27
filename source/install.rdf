@@ -23,7 +23,7 @@
     <em:version>1.0.4</em:version>
     <em:creator>Harry O.</em:creator>
     <em:contributor></em:contributor>
-    <em:description>This Firefox extension regularly backs up your bookmarks and/or history when they are modified. Use this tool to maintain a copy of important browser settings in your personal files.</em:description>
+    <em:description>This Firefox extension automatically backs-up your bookmarks and/or history when they are modified. Use this tool to maintain a copy of important browser settings on a another disk or network share.</em:description>
     <em:aboutURL>chrome://backupfox/content/about.xul</em:aboutURL>
     <em:optionsURL>chrome://backupfox/content/options.xul</em:optionsURL>
 	<em:optionsType>1</em:optionsType> <!-- display in: (1) a dialog box, (2) inside the Add-on Manager, or (3) in a new tab. -->
