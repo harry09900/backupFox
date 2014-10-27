@@ -1,3 +1,4 @@
+1.0.4
 
 1.0.3
 Now supports FireFox versions 5.0 to 7.*.
