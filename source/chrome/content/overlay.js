@@ -55,11 +55,6 @@
 	bf.historyService = null;
 	bf.historyEventObserver = null;
 	
-	//imports
-	//bf.components.utils.import("resource://gre/modules/FileUtils.jsm");
-	//bf.components.utils.import("resource://gre/modules/NetUtil.jsm");
-	//bf.components.utils.import("resource://gre/modules/PlacesUtils.jsm");
-	
 	//static function
 	bf.GetFileFromPath = function(filePath)
 	{
@@ -114,7 +109,7 @@
 	//static function
 	bf.DoBookmarksBackup = function(callback)
 	{
-		bf.components.utils.import("resource://gre/modules/PlacesUtils.jsm");
+		bf.components.utils.import("resource://gre/modules/PlacesBackups.jsm");
 		
 		//set default callback
 		if(callback == undefined)
@@ -146,11 +141,26 @@
 			//get file path in utf-8
 			var filePath = bf.UTF8Coder.decode(bf.preferencesService.getCharPref("extensions.backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66.bBookmarksFilePath"));
 			
-			//open file for over-writing
-			var file = bf.GetFileFromPath(filePath);
-			
 			//write bookmarks in JSON format
-			PlacesUtils.backupBookmarksToFile(file);
+			PlacesBackups.saveBookmarksToJSONFile(filePath).then(
+				function() {
+					// success
+					
+					//set to 'is not running'
+					bf.isBookmarksBackupRunning = false;
+					
+					//callback success
+					callback("success", null, null);
+				},
+				function(ex) {
+					// failure
+					
+					//set to 'is not running'
+					bf.isBookmarksBackupRunning = false;
+					
+					//callback error
+					callback("error", "unknown", ex);
+				});
 		}
 		catch(ex)
 		{
@@ -161,12 +171,6 @@
 			callback("error", "exception", ex);
 			return;
 		}
-		
-		//set to 'is not running'
-		bf.isBookmarksBackupRunning = false;
-
-		//callback success
-		callback("success", null, null);
 	};
 	
 	//static function
