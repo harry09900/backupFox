@@ -1,5 +1,6 @@
 1.0.4
 Using PlacesBackups.saveBookmarksToJSONFile() instead of PlacesUtils.backupBookmarksToFile().
+Bumped minimum supported Firefox version to 32.0.
 
 1.0.3
 Now supports FireFox versions 5.0 to 7.*.
