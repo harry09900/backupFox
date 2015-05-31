@@ -1,3 +1,5 @@
+This file is deprecated. See commit history instead.
+
 1.0.4
 Using PlacesBackups.saveBookmarksToJSONFile() instead of PlacesUtils.backupBookmarksToFile().
 Bumped minimum supported Firefox version to 32.0.
