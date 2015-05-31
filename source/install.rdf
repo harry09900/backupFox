@@ -20,7 +20,7 @@
     <em:id>backupfox_959a5970_ada3_11e0_9f1c_0800200c9a66@mozillafirefoxextension</em:id>
     <em:type>2</em:type>
     <em:name>BackupFox</em:name>
-    <em:version>1.0.4</em:version>
+    <em:version>1.0.5</em:version>
     <em:creator>Harry O.</em:creator>
     <em:contributor></em:contributor>
     <em:description>This Firefox extension automatically backs-up your bookmarks and/or history when they are modified. Use this tool to maintain a copy of important browser settings on a another disk or network share.</em:description>
